@@ -52,7 +52,7 @@
             }
         }
     },
-    "label_options": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/godcgo-label-options.json",
+    "label_options": "https://raw.githubusercontent.com/e-mission/op-deployment-configs/main/label_options/godcgo-label-options.json",
     "survey_info": {
         "surveys": {
             "UserProfileSurvey": {

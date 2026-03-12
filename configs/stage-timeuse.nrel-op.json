@@ -46,7 +46,7 @@
     "survey_info": {
         "surveys": {
             "TripConfirmSurvey": {
-                "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/trip-end-survey-multiple-select.json",
+                "formPath": "https://raw.githubusercontent.com/sebastianbarry/op-deployment-configs/surveys-info-and-surveys-data/survey-resources/data-json/trip-end-survey-multiple-select.json",
                 "version": 1.2,
                 "compatibleWith": 1,
                 "dataKey": "manual/trip_user_input",
@@ -76,7 +76,7 @@
                 }
             },
             "TimeUseSurvey": {
-                "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/time-use-survey-form-v9.json",
+                "formPath": "https://raw.githubusercontent.com/sebastianbarry/op-deployment-configs/surveys-info-and-surveys-data/survey-resources/data-json/time-use-survey-form-v9.json",
                 "version": 9,
                 "compatibleWith": 1,
                 "labelVars": {
