@@ -94,14 +94,19 @@ if __name__ == "__main__":
     group_selection.add_argument(
         "-p",
         "--pool",
+        help="Pool name to match",
+    )
+    group_selection.add_argument(
+        "-m",
+        "--match",
         default="nrelopenpath-prod-",
-        help="Pool name or prefix to match (default: 'nrelopenpath-prod-').",
+        help="String to match",
     )
     group_selection.add_argument(
         "-a",
         "--all",
         action="store_true",
-        help="Match all pools (overrides --pool).",
+        help="Match all pools (overrides --pool and --match).",
     )
     args = parser.parse_args()
 
@@ -112,11 +117,16 @@ if __name__ == "__main__":
     if args.all:
         matching_pools = user_pools
         pool_filter_desc = "all pools"
+    elif args.pool:
+        matching_pools = [
+            user_pool for user_pool in user_pools if user_pool["Name"] == args.pool
+        ]
+        pool_filter_desc = f"pool '{args.pool}'"
     else:
         matching_pools = [
-            user_pool for user_pool in user_pools if user_pool["Name"].startswith(args.pool)
+            user_pool for user_pool in user_pools if args.match in user_pool["Name"]
         ]
-        pool_filter_desc = f"prefix '{args.pool}'"
+        pool_filter_desc = f"match string '{args.match}'"
 
     if not matching_pools:
         print(f"No user pools found matching {pool_filter_desc}")
