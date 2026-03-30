@@ -3,6 +3,7 @@
 export type DeploymentConfig = {
   url_abbreviation: string; // this is basically the "deployment ID"
   version: number;
+  min_app_version?: string;
   ts: number;
   server?: ServerConnConfig; // TODO: this is required for any real deployments but missing for dev-emulator- configs, so I have to mark it as optional. Maybe the dev-emulator- configs should explicitly say localhost here so we can mark this as required
   opcode?: OpcodeConfig;
