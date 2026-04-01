@@ -19,13 +19,14 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Install dependencies
+        run: |
+          npm install typescript-json-schema ajv-cli
+
       - name: Generate JSON schema with typescript-json-schema
         run: |
-          npm install -g typescript-json-schema
           npx typescript-json-schema index.d.ts DeploymentConfig --noExtraProps --required --out config.schema.json
 
-      - name: Validate all configs against config.schema.json
-        uses: cardinalby/schema-validator-action@v3
-        with:
-          file: 'configs/*.json'
-          schema: 'config.schema.json'
+      - name: Validate all configs with ajv-cli
+        run: |
+          npx ajv validate -s config.schema.json -d "configs/*.json"
