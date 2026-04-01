@@ -13,7 +13,7 @@ export type DeploymentConfig = {
     surveys: EnketoSurveyConfig;
     buttons?: SurveyButtonsConfig;
   };
-  label_options?: `https://${string}`;
+  label_options?: LabelOptionsConfig | `https://${string}`;
   vehicle_identities?: VehicleIdentity[];
   reminderSchemes?: ReminderSchemesConfig;
   tracking?: Partial<TrackingConfig>;
@@ -84,6 +84,53 @@ export type SurveyButtonsConfig = {
     | SurveyButtonConfig
     | SurveyButtonConfig[];
 };
+
+/* BEGIN: label_options types */
+
+export type FootprintFuelType =
+  | "gasoline"
+  | "diesel"
+  | "electric"
+  | "cng"
+  | "lpg"
+  | "hydrogen";
+
+export type RichMode = {
+  value: string;
+  base_mode: string;
+  icon: string;
+  color: string;
+  met?: { [k in string]?: { range: [number, number]; mets: number } };
+  footprint?: {
+    [f in FootprintFuelType]?: {
+      wh_per_km?: number;
+      wh_per_trip?: number;
+    };
+  };
+};
+
+export type MultilabelKey = "MODE" | "PURPOSE" | "REPLACED_MODE";
+
+export type LabelOption<T extends string = MultilabelKey> = T extends "MODE"
+  ? {
+      value: string;
+      base_mode: string;
+    } & Partial<RichMode>
+  : {
+      value: string;
+    };
+
+export type LabelOptionsConfig = {
+  MODE: LabelOption<"MODE">[];
+  PURPOSE: LabelOption<"PURPOSE">[];
+  REPLACED_MODE?: LabelOption<"REPLACED_MODE">[];
+} & {
+  translations: {
+    [lang: string]: { [translationKey: string]: string };
+  };
+};
+
+/* END: label_options types */
 
 export type VehicleIdentity = {
   value: string;
