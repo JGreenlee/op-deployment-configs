@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "stage-program",
-    "version": 2,
+    "version": 3,
     "ts": 1655143472,
     "server": {
         "connectUrl": "https://openpath-stage.nlr.gov/api/",
