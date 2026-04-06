@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "ca-ebike",
-    "version": 2,
+    "version": 3,
     "ts": 1655143472,
     "server": {
         "connectUrl": "https://ca-ebike-openpath.nlr.gov/api/",
@@ -96,11 +96,11 @@
         "options_uuids": true,
         "options_emails": true,
         "admin_access": [
-          "dtfitch@ucdavis.edu",
-          "k.shankari@nlr.gov",
-          "siagarwal@ucdavis.edu",
-          "tfukushige@ucdavis.edu",
-          "jack.greenlee@nlr.gov"
+            "dtfitch@ucdavis.edu",
+            "k.shankari@nlr.gov",
+            "siagarwal@ucdavis.edu",
+            "tfukushige@ucdavis.edu",
+            "jack.greenlee@nlr.gov"
         ]
     }
 }

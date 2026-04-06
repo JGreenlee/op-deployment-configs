@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "sgv-ebike",
-    "version": 2,
+    "version": 3,
     "ts": 1741368160,
     "server": {
         "connectUrl": "https://sgv-ebike-openpath.nlr.gov/api/",

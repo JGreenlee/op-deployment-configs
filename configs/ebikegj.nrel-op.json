@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "ebikegj",
-    "version": 1,
+    "version": 2,
     "ts": 1655143472,
     "server": {
         "connectUrl": "https://ebikegj-openpath.nlr.gov/api/",

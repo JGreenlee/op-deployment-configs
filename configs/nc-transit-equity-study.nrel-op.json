@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "nc-transit-equity-study",
-    "version": 1,
+    "version": 2,
     "ts": 1733948731,
     "server": {
         "connectUrl": "https://nc-transit-equity-study-openpath.nlr.gov/api/",

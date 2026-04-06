@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "e-bikes-for-essentials",
-    "version": 1,
+    "version": 2,
     "ts": 1655143472,
     "server": {
         "connectUrl": "https://e-bikes-for-essentials-openpath.nlr.gov/api/",

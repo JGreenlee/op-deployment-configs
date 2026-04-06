@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "doee-electricbike-proj",
-    "version": 1,
+    "version": 2,
     "ts": 1707330356,
     "server": {
         "connectUrl": "https://doee-electricbike-proj-openpath.nlr.gov/api/",

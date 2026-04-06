@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "cosa-ebike-project",
-    "version": 2,
+    "version": 3,
     "ts": 1710526862,
     "server": {
         "connectUrl": "https://cosa-ebike-project-openpath.nlr.gov/api/",

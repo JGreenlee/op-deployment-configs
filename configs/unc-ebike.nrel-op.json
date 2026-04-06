@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "unc-ebike",
-    "version": 4,
+    "version": 5,
     "ts": 1730230434,
     "server": {
         "connectUrl": "https://unc-ebike-openpath.nlr.gov/api/",

@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "uw-prs",
-    "version": 1,
+    "version": 2,
     "ts": 1707503923,
     "server": {
         "connectUrl": "https://uw-prs-openpath.nlr.gov/api/",

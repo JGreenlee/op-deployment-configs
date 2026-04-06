@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "r2oseportland",
-    "version": 1,
+    "version": 2,
     "ts": 1743723406,
     "server": {
         "connectUrl": "https://r2oseportland-openpath.nlr.gov/api/",

@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "arlingtonebike",
-    "version": 3,
+    "version": 4,
     "ts": 1751298857,
     "server": {
         "connectUrl": "https://arlingtonebike-openpath.nlr.gov/api/",

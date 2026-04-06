@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "uw-ebike",
-    "version": 2,
+    "version": 3,
     "ts": 1741377085,
     "server": {
         "connectUrl": "https://uw-ebike-openpath.nlr.gov/api/",

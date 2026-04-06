@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "godcgo",
-    "version": 1,
+    "version": 2,
     "ts": 1714679651,
     "server": {
         "connectUrl": "https://godcgo-openpath.nlr.gov/api/",
