@@ -97,8 +97,7 @@
         "options_emails": true,
         "admin_access": [
             "jenny@fourcore.org",
-            "rebekah@fourcore.org",
-            "kathleen@fourcore.org"
+            "rebekah@fourcore.org"
         ]
     }
 }
